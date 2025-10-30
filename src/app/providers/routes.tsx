@@ -1,7 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router";
 import { HomePage } from "@pages/home";
-import { ProfilePage } from "@pages/profile";
 import { AboutPage } from "@pages/about";
+import { lazy } from "react";
+
+const ProfilePage = lazy(() => import("@pages/profile"));
 
 export const Routing = () => {
   return (

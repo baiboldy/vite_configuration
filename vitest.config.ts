@@ -30,5 +30,12 @@ export default defineConfig(({ mode }) => {
       port: 8081,
       open: true,
     },
+    test: {
+      globals: true,
+      environment: "jsdom",
+      setupFiles: ["./src/shared/lib/test-setup.ts"],
+      include: ["src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
+      exclude: ["node_modules", "dist", ".idea", ".git", ".cache"],
+    },
   };
 });

@@ -1,4 +1,4 @@
 export const HomePage = () => {
-  const unusedVar = "Hello";
+  const unusedVariable = "Hello";
   return <h1>Home</h1>;
 };

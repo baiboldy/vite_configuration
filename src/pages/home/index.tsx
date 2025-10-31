@@ -1,4 +1,13 @@
+import { Box, Container } from "@mui/material";
+import { TodoList } from "@features/todo-list/ui/TodoList.tsx";
+
 export const HomePage = () => {
-  const unusedVariable = "Home";
-  return <h1>{unusedVariable}</h1>;
+  return (
+    <Box>
+      <h1>Home page</h1>
+      <Container maxWidth="xl">
+        <TodoList />
+      </Container>
+    </Box>
+  );
 };
